@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
+    android:background="#262525"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity3">
@@ -17,7 +18,10 @@
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
             android:text="Mensajes"
+            android:textSize="25sp"
+            android:textStyle="italic"
             android:layout_weight="5"
             android:gravity="center_vertical"
             android:textColor="@color/white"
@@ -27,14 +31,14 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/jupiter">
+            android:src="@drawable/settings">
 
         </ImageView>
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/luna">
+            android:src="@drawable/close">
         </ImageView>
     </LinearLayout>
     <LinearLayout
@@ -43,17 +47,28 @@
         android:layout_weight="1"
         android:orientation="horizontal"
         android:padding="5dp">
-        <ImageView
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/luna">
+            app:cardCornerRadius="20dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/black">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/steve">
+            </ImageView>
+        </com.google.android.material.card.MaterialCardView>
 
-        </ImageView>
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="Mensajes"
+            android:text="Steve"
+            android:textSize="20sp"
+            android:textColor="#155F97"
+            android:textStyle="bold"
             android:layout_weight="7"
             android:gravity="center_vertical">
         </com.google.android.material.textview.MaterialTextView>
@@ -61,7 +76,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:src="@drawable/luna">
+            android:src="@drawable/read">
 
         </ImageView>
     </LinearLayout>
@@ -79,16 +94,16 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="Hola que tal"
             android:layout_weight="7"
             android:backgroundTint="#155F97"
-            app:cardCornerRadius="16dp">
+            app:cardCornerRadius="16dp"
+            app:strokeColor="#155F97">
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
                 android:textColor="@color/white"
                 android:layout_height="match_parent"
                 android:padding="20dp"
-                android:text="Hola que tal">
+                android:text="Hola!">
 
             </com.google.android.material.textview.MaterialTextView>
         </com.google.android.material.card.MaterialCardView>
@@ -104,17 +119,27 @@
         android:layout_weight="1"
         android:orientation="horizontal"
         android:padding="5dp">
-        <ImageView
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/luna">
+            app:cardCornerRadius="20dp"
+            android:layout_marginRight="5dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/nickcage">
 
-        </ImageView>
+            </ImageView>
+        </com.google.android.material.card.MaterialCardView>
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="Mensajes"
+            android:text="Nicolas"
+            android:textStyle="bold"
+            android:textColor="#155F97"
+            android:textSize="20sp"
             android:layout_weight="7"
             android:gravity="center_vertical">
         </com.google.android.material.textview.MaterialTextView>
@@ -122,7 +147,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:src="@drawable/luna">
+            android:src="@drawable/read">
 
         </ImageView>
     </LinearLayout>
@@ -140,16 +165,16 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="Hola que tal"
             android:layout_weight="7"
             android:backgroundTint="#155F97"
-            app:cardCornerRadius="16dp">
+            app:cardCornerRadius="16dp"
+            app:strokeColor="#155F97">
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
                 android:textColor="@color/white"
                 android:layout_height="match_parent"
                 android:padding="20dp"
-                android:text="Hola que tal">
+                android:text="Hola!">
 
             </com.google.android.material.textview.MaterialTextView>
         </com.google.android.material.card.MaterialCardView>
@@ -165,17 +190,28 @@
         android:layout_weight="1"
         android:orientation="horizontal"
         android:padding="5dp">
-        <ImageView
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/luna">
+            app:cardCornerRadius="20dp"
+            android:layout_marginRight="5dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/harold">
 
-        </ImageView>
+            </ImageView>
+        </com.google.android.material.card.MaterialCardView>
+
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="Mensajes"
+            android:text="Harold"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#155F97"
             android:layout_weight="7"
             android:gravity="center_vertical">
         </com.google.android.material.textview.MaterialTextView>
@@ -183,7 +219,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:src="@drawable/luna">
+            android:src="@drawable/unread">
 
         </ImageView>
     </LinearLayout>
@@ -202,16 +238,16 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="Hola que tal"
             android:layout_weight="7"
             android:backgroundTint="#155F97"
-            app:cardCornerRadius="16dp">
+            app:cardCornerRadius="16dp"
+            app:strokeColor="#155F97">
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
                 android:textColor="@color/white"
                 android:layout_height="match_parent"
                 android:padding="20dp"
-                android:text="Hola que tal">
+                android:text="Hola!">
 
             </com.google.android.material.textview.MaterialTextView>
         </com.google.android.material.card.MaterialCardView>
