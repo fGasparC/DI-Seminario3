@@ -54,7 +54,7 @@ class tresEnRaya : AppCompatActivity() {
         }
         mapaDeRecuadros.forEach { (pos, recuadro) ->
           recuadro.setOnClickListener(){
-              recuadro.setImageResource(R.drawable.equis)
+              recuadro.setImageResource(R.drawable.steve)
               recuadro.isClickable=false
               lista[pos]++
               click++
@@ -82,7 +82,7 @@ class tresEnRaya : AppCompatActivity() {
         val posMapaMaquina = listaDeEntradas[posMaquina]
         val clave = posMapaMaquina.key
         val recuadro = posMapaMaquina.value
-        recuadro.setImageResource(R.drawable.circulo)
+        recuadro.setImageResource(R.drawable.nickcage)
         recuadro.isClickable = false
         lista[clave]--
         victoriaMaquina=victoria(-1)
