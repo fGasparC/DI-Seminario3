@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
@@ -61,9 +62,11 @@ class tresEnRaya : AppCompatActivity() {
               if(victoriaHumano){
                   victoriaderrota.setText("GANASTE")
                   findeljuego(listaRecuadros)
+                  victoriaderrota.setTextColor(Color.GREEN)
               }
               else if(click==5){
                   victoriaderrota.setText("Se ha producido un empate.")
+                  victoriaderrota.setTextColor(Color.YELLOW)
               }
               else{
                   mapaDeRecuadros.remove(pos)
@@ -85,6 +88,7 @@ class tresEnRaya : AppCompatActivity() {
         victoriaMaquina=victoria(-1)
         if(victoriaMaquina){
             b.setText("GANO LA MAQUINA")
+            b.setTextColor(Color.RED)
             findeljuego(c)
             return a
         }
