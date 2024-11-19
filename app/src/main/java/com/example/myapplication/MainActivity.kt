@@ -3,6 +3,7 @@ package com.example.myapplication
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -27,10 +28,41 @@ class MainActivity : AppCompatActivity() {
         val boton7=findViewById<Button>(R.id.b7)
         val boton8=findViewById<Button>(R.id.b8)
         val boton9=findViewById<Button>(R.id.b9)
-        val boton10=findViewById<Button>(R.id.b10)
 
         boton1.setOnClickListener(){
             var intent = Intent(this@MainActivity, MainActivity2::class.java)
+            startActivity(intent)
+        }
+        boton2.setOnClickListener(){
+            var intent = Intent(this@MainActivity, MainActivity3::class.java)
+            startActivity(intent)
+        }
+        boton3.setOnClickListener(){
+            var intent = Intent(this@MainActivity, MainActivity5::class.java)
+            startActivity(intent)
+        }
+        boton4.setOnClickListener(){
+            var intent = Intent(this@MainActivity, MainActivity4::class.java)
+            startActivity(intent)
+        }
+        boton5.setOnClickListener {
+            Toast.makeText(this, "¡Este es el ejercicio 5!", Toast.LENGTH_LONG).show()
+        }
+
+        boton6.setOnClickListener(){
+            var intent = Intent(this@MainActivity, tresEnRaya::class.java)
+            startActivity(intent)
+        }
+        boton7.setOnClickListener(){
+            var intent = Intent(this@MainActivity, MainActivity6::class.java)
+            startActivity(intent)
+        }
+        boton8.setOnClickListener(){
+            var intent = Intent(this@MainActivity, MainActivity7::class.java)
+            startActivity(intent)
+        }
+        boton9.setOnClickListener(){
+            var intent = Intent(this@MainActivity, MainActivity8::class.java)
             startActivity(intent)
         }
     }
@@ -38,37 +70,6 @@ class MainActivity : AppCompatActivity() {
 
 
 
-    /*
-    boton2.setOnClickListener(){
-        var intent = Intent(this@MainActivity10, MainActivity2::class.java)
-        startActivity(intent)
-    }
-    boton3.setOnClickListener(){
-        var intent = Intent(this@MainActivity10, MainActivity3::class.java)
-        startActivity(intent)
-    }
-    boton4.setOnClickListener(){
-        var intent = Intent(this@MainActivity10, MainActivity4::class.java)
-        startActivity(intent)
-    }
-    boton5.setOnClickListener(){
-        var intent = Intent(this@MainActivity10, MainActivity5::class.java)
-        startActivity(intent)
-    }
-    boton6.setOnClickListener(){
-        var intent = Intent(this@MainActivity10, MainActivity6::class.java)
-        startActivity(intent)
-    }
-    boton7.setOnClickListener(){
-        var intent = Intent(this@MainActivity10, MainActivity7::class.java)
-        startActivity(intent)
-    }
-    boton8.setOnClickListener(){
-        var intent = Intent(this@MainActivity10, MainActivity8::class.java)
-        startActivity(intent)
-    }
-    boton9.setOnClickListener(){
-        var intent = Intent(this@MainActivity10, MainActivity9::class.java)
-        startActivity(intent)
-    }*/
+
+
 }

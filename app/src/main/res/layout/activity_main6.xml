@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:padding="50dp"
+    android:layout_margin="50dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity6">
@@ -21,6 +21,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textSize="30sp">
@@ -34,6 +35,7 @@
         android:textColor="#F400DB"
         app:layout_constraintTop_toBottomOf="@id/tiL">
         <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/numerilloaleatorio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#BDBABA"
@@ -44,6 +46,7 @@
         </com.google.android.material.textview.MaterialTextView>
     </com.google.android.material.card.MaterialCardView>
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/botoncetepasadatos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"

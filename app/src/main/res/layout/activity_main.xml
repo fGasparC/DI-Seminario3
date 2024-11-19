@@ -134,13 +134,6 @@
             android:layout_margin="10dp"
             android:text="Ejercicio 9">
         </Button>
-        <Button
-            android:id="@+id/b10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_margin="10dp"
-            android:text="Ejercicio 10">
-        </Button>
+
     </LinearLayout>
 </LinearLayout>
