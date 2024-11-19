@@ -36,7 +36,6 @@ class MainActivity7 : AppCompatActivity() {
             val textoPasar=textoMostrado.text.toString()
             intent.putExtra("Texto",textoPasar)
             startActivity(intent)
-            Log.d("Texto a pasar", textoPasar)
         }
 
     }
