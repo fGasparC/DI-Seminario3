@@ -21,13 +21,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiiil2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textSize="30sp">
         </com.google.android.material.textfield.TextInputEditText>
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/botoncito"
+        android:id="@+id/botoncitoinsertadatos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -47,12 +48,13 @@
         android:backgroundTint="#3F51B5"
         android:textSize="30sp"
         android:text="Pasar datos"
-        app:layout_constraintTop_toBottomOf="@id/botoncito"
+        app:layout_constraintTop_toBottomOf="@id/botoncitoinsertadatos"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
     </com.google.android.material.button.MaterialButton>
     <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textetemostrador"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
